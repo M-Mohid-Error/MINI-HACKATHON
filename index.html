@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiringMine - Find Your Dream Job</title>
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 text-primary" href="#"><img src="./assets/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Candidates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-primary rounded-pill me-2">Login</button>
+                    <button class="btn btn-primary rounded-pill">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5 text-center bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3 "color="blue">Dig. Apply <br> Prepare Your Future</h1>
+                    <p class="lead mb-4">Discover thousands of job opportunities from leading companies worldwide.</p>
+                    <div class="input-group mb-3 custom-search-bar">
+                        <input type="text" class="form-control rounded-start-pill py-3 px-4" placeholder="Job title, keywords, or company">
+                        <input type="text" class="form-control py-3 px-4" placeholder="Location">
+                        <button class="btn btn-primary rounded-end-pill px-5" type="button">Search Job</button>
+                    </div>
+                    <div class="popular-tags mt-4">
+                        <span class="fw-bold me-2">Popular Searches:</span>
+                        <a href="#" class="badge bg-secondary-subtle text-dark rounded-pill me-2 p-2">UI/UX Design</a>
+                        <a href="#" class="badge bg-secondary-subtle text-dark rounded-pill me-2 p-2">Developer</a>
+                        <a href="#" class="badge bg-secondary-subtle text-dark rounded-pill me-2 p-2">Marketing</a>
+                        <a href="#" class="badge bg-secondary-subtle text-dark rounded-pill me-2 p-2">Finance</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Categories Section -->
+    <section class="job-categories-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Popular Job Categories</h2>
+            <div class="row g-4">
+                <div class="col-md-4 col-lg-3">
+                    <div class="card category-card p-4 text-center border-0 shadow-sm rounded-3">
+                        <i class="fas fa-pencil-ruler fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-bold">Design</h5>
+                        <p class="text-muted">250 Jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card category-card p-4 text-center border-0 shadow-sm rounded-3">
+                        <i class="fas fa-code fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-bold">Development</h5>
+                        <p class="text-muted">320 Jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card category-card p-4 text-center border-0 shadow-sm rounded-3">
+                        <i class="fas fa-bullhorn fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-bold">Marketing</h5>
+                        <p class="text-muted">180 Jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card category-card p-4 text-center border-0 shadow-sm rounded-3">
+                        <i class="fas fa-briefcase fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-bold">Business</h5>
+                        <p class="text-muted">150 Jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card category-card p-4 text-center border-0 shadow-sm rounded-3">
+                        <i class="fas fa-hand-holding-usd fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-bold">Finance</h5>
+                        <p class="text-muted">110 Jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card category-card p-4 text-center border-0 shadow-sm rounded-3">
+                        <i class="fas fa-chart-line fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-bold">Sales</h5>
+                        <p class="text-muted">90 Jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card category-card p-4 text-center border-0 shadow-sm rounded-3">
+                        <i class="fas fa-headset fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-bold">Customer Service</h5>
+                        <p class="text-muted">200 Jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card category-card p-4 text-center border-0 shadow-sm rounded-3">
+                        <i class="fas fa-flask fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-bold">Science</h5>
+                        <p class="text-muted">75 Jobs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary rounded-pill px-4 py-2">Explore All Categories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">How It Works</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm rounded-3">
+                        <div class="icon-circle mx-auto mb-3 bg-primary text-white d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fas fa-user-plus fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Create an Account</h5>
+                        <p class="text-muted">Register for free and build your profile.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm rounded-3">
+                        <div class="icon-circle mx-auto mb-3 bg-primary text-white d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fas fa-search fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Search Your Job</h5>
+                        <p class="text-muted">Browse thousands of jobs by category, location, or keyword.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm rounded-3">
+                        <div class="icon-circle mx-auto mb-3 bg-primary text-white d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fas fa-paper-plane fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Apply with Confidence</h5>
+                        <p class="text-muted">Submit your application with just a few clicks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs Section -->
+    <section class="featured-jobs-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Featured Jobs</h2>
+            <div class="row g-4">
+                <!-- Job Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card job-card p-4 border-0 shadow-sm rounded-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://placehold.co/60x60/ADD8E6/000000?text=C" alt="Company Logo" class="rounded-circle me-3">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Senior UI/UX Designer</h5>
+                                <p class="text-muted mb-0">Creative Solutions Inc.</p>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-2"></i>Lahore, PAKISTAN</p>
+                        <p class="fw-bold text-primary mb-3"><i class="fas fa-money-bill-wave me-2"></i>80,000Rs - 100,000Rs / year</p>
+                        <div class="d-flex flex-wrap mb-3">
+                            <span class="badge bg-info-subtle text-info rounded-pill px-3 py-2 me-2 mb-2">Full-time</span>
+                            <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2 me-2 mb-2">Design</span>
+                        </div>
+                        <button class="btn btn-primary rounded-pill w-100">Apply Now</button>
+                    </div>
+                </div>
+                <!-- Job Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card job-card p-4 border-0 shadow-sm rounded-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://placehold.co/60x60/DDA0DD/000000?text=T" alt="Company Logo" class="rounded-circle me-3">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Lead Software Engineer</h5>
+                                <p class="text-muted mb-0">Tech Innovations Ltd.</p>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-2"></i>Karachi, PAKISTAN</p>
+                        <p class="fw-bold text-primary mb-3"><i class="fas fa-money-bill-wave me-2"></i>120,000Rs - 150,000Rs / year</p>
+                        <div class="d-flex flex-wrap mb-3">
+                            <span class="badge bg-info-subtle text-info rounded-pill px-3 py-2 me-2 mb-2">Full-time</span>
+                            <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2 me-2 mb-2">Development</span>
+                        </div>
+                        <button class="btn btn-primary rounded-pill w-100">Apply Now</button>
+                    </div>
+                </div>
+                <!-- Job Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card job-card p-4 border-0 shadow-sm rounded-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://placehold.co/60x60/87CEEB/000000?text=M" alt="Company Logo" class="rounded-circle me-3">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Digital Marketing Specialist</h5>
+                                <p class="text-muted mb-0">Global Marketing Solutions</p>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-2"></i>Sukkur, PAKISTAN</p>
+                        <p class="fw-bold text-primary mb-3"><i class="fas fa-money-bill-wave me-2"></i>60,000Rs - 75,000Rs / year</p>
+                        <div class="d-flex flex-wrap mb-3">
+                            <span class="badge bg-info-subtle text-info rounded-pill px-3 py-2 me-2 mb-2">Full-time</span>
+                            <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2 me-2 mb-2">Marketing</span>
+                        </div>
+                        <button class="btn btn-primary rounded-pill w-100">Apply Now</button>
+                    </div>
+                </div>
+                <!-- Job Card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card job-card p-4 border-0 shadow-sm rounded-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://placehold.co/60x60/90EE90/000000?text=D" alt="Company Logo" class="rounded-circle me-3">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Data Scientist</h5>
+                                <p class="text-muted mb-0">DataDriven Analytics</p>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-2"></i>Faislabad, PAKISTAN</p>
+                        <p class="fw-bold text-primary mb-3"><i class="fas fa-money-bill-wave me-2"></i>95,000Rs - 110,000Rs / year</p>
+                        <div class="d-flex flex-wrap mb-3">
+                            <span class="badge bg-info-subtle text-info rounded-pill px-3 py-2 me-2 mb-2">Full-time</span>
+                            <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2 me-2 mb-2">Data Science</span>
+                        </div>
+                        <button class="btn btn-primary rounded-pill w-100">Apply Now</button>
+                    </div>
+                </div>
+                <!-- Job Card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card job-card p-4 border-0 shadow-sm rounded-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://placehold.co/60x60/D8BFD8/000000?text=F" alt="Company Logo" class="rounded-circle me-3">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Financial Analyst</h5>
+                                <p class="text-muted mb-0">Apex Finance Group</p>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-2"></i>Hyderabad, PAKISTAN</p>
+                        <p class="fw-bold text-primary mb-3"><i class="fas fa-money-bill-wave me-2"></i>70,000Rs - 85,000Rs / year</p>
+                        <div class="d-flex flex-wrap mb-3">
+                            <span class="badge bg-info-subtle text-info rounded-pill px-3 py-2 me-2 mb-2">Full-time</span>
+                            <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2 me-2 mb-2">Finance</span>
+                        </div>
+                        <button class="btn btn-primary rounded-pill w-100">Apply Now</button>
+                    </div>
+                </div>
+                <!-- Job Card 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card job-card p-4 border-0 shadow-sm rounded-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://placehold.co/60x60/C0C0C0/000000?text=S" alt="Company Logo" class="rounded-circle me-3">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Sales Manager</h5>
+                                <p class="text-muted mb-0">SalesPro Solutions</p>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-2"></i>Sanghar, PAKISTAN</p>
+                        <p class="fw-bold text-primary mb-3"><i class="fas fa-money-bill-wave me-2"></i>Rs90,000 - 110,000Rs / year</p>
+                        <div class="d-flex flex-wrap mb-3">
+                            <span class="badge bg-info-subtle text-info rounded-pill px-3 py-2 me-2 mb-2">Full-time</span>
+                            <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2 me-2 mb-2">Sales</span>
+                        </div>
+                        <button class="btn btn-primary rounded-pill w-100">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary rounded-pill px-4 py-2">Load More Jobs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">What Our Users Say</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card p-4 text-center border-0 shadow-sm rounded-3">
+                                    <p class="lead mb-3">"HiringMine helped me land my dream job within a month! The platform is intuitive, and the job listings are highly relevant. Highly recommended!"</p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="https://placehold.co/50x50/ADD8E6/000000?text=JD" alt="User Avatar" class="rounded-circle me-3">
+                                        <div>
+                                            <h6 class="mb-0 fw-bold">Jane Doe</h6>
+                                            <small class="text-muted">UI/UX Designer</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card p-4 text-center border-0 shadow-sm rounded-3">
+                                    <p class="lead mb-3">"As a recruiter, HiringMine has streamlined our hiring process. We found top talent efficiently and effectively. A fantastic tool for companies!"</p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="https://placehold.co/50x50/DDA0DD/000000?text=AS" alt="User Avatar" class="rounded-circle me-3">
+                                        <div>
+                                            <h6 class="mb-0 fw-bold">Alex Smith</h6>
+                                            <small class="text-muted">HR Manager</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card p-4 text-center border-0 shadow-sm rounded-3">
+                                    <p class="lead mb-3">"The blog section is incredibly helpful for career advice. The job search filters are excellent, making it easy to find exactly what I'm looking for."</p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="https://placehold.co/50x50/87CEEB/000000?text=ML" alt="User Avatar" class="rounded-circle me-3">
+                                        <div>
+                                            <h6 class="mb-0 fw-bold">Maria Lee</h6>
+                                            <small class="text-muted">Software Developer</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-3">Ready to find your dream job?</h2>
+            <p class="lead mb-4">Join thousands of job seekers and connect with top companies.</p>
+            <button class="btn btn-light rounded-pill px-5 py-3 fs-5">Get Started Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3 text-primary">HiringMine</h5>
+                    <p class="text-muted">Your ultimate platform for discovering and applying for the best job opportunities, connecting talent with leading companies worldwide.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#" class="text-decoration-none text-muted">Home</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Find Jobs</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">About Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Job Seeker Rd, Suite 456</li>
+                        <li><i class="fas fa-phone me-2"></i>+1 (123) 456-7890</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@hiringmine.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-muted">
+                &copy; 2025 HiringMine. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eJ7QyeWCPu5I4X2fK" crossorigin="anonymous"></script>
+</body>
+</html>
